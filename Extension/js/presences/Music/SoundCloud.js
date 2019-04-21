@@ -43,7 +43,7 @@ async function updateData() {
     songTitle = $('.playbackSoundBadge__titleLink').children().get(1).innerHTML
     songAuthors = $('.playbackSoundBadge__titleContextContainer').children().get(0).innerHTML
     playbackBoolean = $('.playControl').hasClass('playing')
-    smallImageKey = playbackBoolean ? 'play' : 'pause'
+    smallImageKey = playbackBoolean ? 'pause' : 'play'
     smallImageText = playbackBoolean ? await getString("presence.playback.playing") : await getString("presence.playback.paused")
 
     var data = {
